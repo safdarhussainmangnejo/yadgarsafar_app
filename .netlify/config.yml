@@ -1,0 +1,7 @@
+sites:
+- name: frontend
+  build_dir: frontend/dist
+- name: agency
+  build_dir: agency/dist
+- name: backend
+  build_dir: backend/dist

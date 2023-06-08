@@ -1,7 +1,7 @@
 sites:
 - name: frontend
-  build_dir: frontend/dist
+  build_dir: yadgarsafar_app/frontend
 - name: agency
-  build_dir: agency/dist
+  build_dir: yadgarsafar_app/agency
 - name: backend
-  build_dir: backend/dist
+  build_dir: yadgarsafar_app/backend

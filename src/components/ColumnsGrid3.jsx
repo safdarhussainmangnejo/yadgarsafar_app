@@ -25,10 +25,6 @@ export default function ColumnsGrid3() {
         <ExploreProvinces province="gilgitBaltistan" image={gilgitBaltistan} name={"Gilgit Baltistan"} />
       </div>
 
-
-      {/* <div className='col-xl-3 col-lg-4 col-md-6 col-sm-12'>
-          <ExploreProvinces province="gilgitBaltistan" image={gilgitBaltistan} name={"Gilgit Baltistan"} />
-      </div> */}
     </div >
 
     <div className='row g-0'>
@@ -45,29 +41,9 @@ export default function ColumnsGrid3() {
           <ExploreProvinces province="islamabad" image={Islamabad} name={"Islamabad"} />
       </div>
 
-      {/* <div className='col-xl-3 col-lg-4 col-md-6 col-sm-12'>
-          <ExploreProvinces province="gilgitBaltistan" image={gilgitBaltistan} name={"Gilgit Baltistan"} />
-      </div> */}
+     
     </div >
 
-    {/* <div className='row g-0'>
-
-      <div className='col-xl-3 col-lg-4 col-md-6 col-sm-12'>          
-        <ExploreProvinces province="kpk" image={khaberPass} name={"KPK"} />
-      </div>
-
-      <div className='col-xl-3 col-lg-4 col-md-6 col-sm-12'>
-          <ExploreProvinces province="sindh" image={quiadmazar} name={"Sindh"} />
-      </div>
-
-      <div className='col-xl-3 col-lg-4 col-md-6 col-sm-12'>
-          <ExploreProvinces province="punjab" image={minarEpakistan} name={"Punjab"} />
-      </div>
-
-      <div className='col-xl-3 col-lg-4 col-md-6 col-sm-12'>
-          <ExploreProvinces province="gilgitBaltistan" image={gilgitBaltistan} name={"Gilgit Baltistan"} />
-      </div>
-    </div > */}
     </>
   )
 }

@@ -36,20 +36,20 @@ const Details = (props) => {
 
   const LocalStorageUser = JSON.parse(localStorage.getItem(''))
   const fetchData = async () => {
-    let data = await axios.get("http://localhost:8080/getUsers");
+    let data = await axios.get("https://yadgarsafar-backend.netlify.app/getUsers");
 
     setDetail(data.data);
   };
 
   const fetchData2 = async () => {
-    let user = await axios.get("http://localhost:8080/getData");
+    let user = await axios.get("https://yadgarsafar-backend.netlify.app/getData");
 
     setUser(user.data);
   };
 
   // calling price of package
   const findPackagePrice = async ()=>{
-    await fetch(`http://localhost:8080/findPackagePrice/${id}`)
+    await fetch(`https://yadgarsafar-backend.netlify.app/findPackagePrice/${id}`)
       .then((response) => response.json())
       .then((data) => {
         if (!data) {
@@ -90,7 +90,6 @@ const Details = (props) => {
                
                   <div className="row g-0">
                     <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
-                      {/* package wallpaper */}
                       <div
                         style={{ display: "flex", justifyContent: "center" }}
                       >
@@ -110,7 +109,6 @@ const Details = (props) => {
 
                       <br />
 
-                      {/* package wallpaper description */}
                       <div
                         style={{
                           display: "flex",
@@ -151,8 +149,7 @@ const Details = (props) => {
                         <h5>Services</h5>
                         {/* Included1 */}
                         {pckg.included1.length > 0 && (
-                          // pckg.included.map(inc => {
-                          //     return
+                          
                           <h6>
                             {console.log("Included1 => ", pckg.included1)}
                             {pckg.included1
@@ -202,8 +199,7 @@ const Details = (props) => {
 
                         {/* Included2 */}
                         {pckg.included2.length > 0 && (
-                          // pckg.included.map(inc => {
-                          //     return
+                          
                           <h6>
                             {console.log("Included1 => ", pckg.included2)}
                             {pckg.included2

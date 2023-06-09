@@ -1,5 +1,4 @@
 import '../index.css';
-// import { TextField } from '@mui/material';
 import * as React from 'react';
 import TextField from '@mui/material/TextField';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
@@ -8,14 +7,6 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { Button } from '@mui/material';
 import BasicSelect from './SelectBox';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
-// import {makeStyles} from '@material-ui/core';
-
-// const useStyle = makeStyles ({
-//   textF : {
-//     color: 'red',
-//     backgrondColor : "red"
-//   }
-// })
 
 
 const Searchbar = ()=>{
@@ -32,7 +23,6 @@ const Searchbar = ()=>{
               <TextField
                   id="demo-helper-text-aligned"
                   label="Search"
-                  // className={classes.textF}
                 />
               </div>
 

@@ -13,7 +13,7 @@ const Profile = () => {
 
     var data;
     const fetchData = async () => {
-      fetch("http://localhost:8080/getData")                   // "http://localhost:27017/getData"
+      fetch("https://yadgarsafar-backend.netlify.app/getData")
         .then(response => response.json()).then(data => {
 
             setProf(data)
@@ -23,7 +23,7 @@ const Profile = () => {
 
     const fetchData2 = async () => {
 
-        let user = await axios.get('http://localhost:8080/getData')
+        let user = await axios.get('https://yadgarsafar-backend.netlify.app/getData')
 
         setUser(user.data)
         setPackages(user.data.bookedPackages);

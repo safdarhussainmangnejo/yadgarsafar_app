@@ -11,7 +11,7 @@ export default function ColumnsGrid() {
 
   const fetchData = async () => {
 
-    let data = await axios.get('http://localhost:8080/getUsers')
+    let data = await axios.get('https://yadgarsafar-backend.netlify.app/getUsers')
 
     setTrips(data.data)
   }

@@ -41,12 +41,12 @@ export default function PaymentForm() {
   const totalAmountCents = totalAmountUSD*100;
   console.log("totalAmountCents: ", totalAmountCents, "totalAmountUSD: ", totalAmountUSD)
   const loadAgencyData = async () => {
-    let response = await axios.get("http://localhost:8080/getUsers");
+    let response = await axios.get("https://yadgarsafar-backend.netlify.app/getUsers");
     setAgency(response.data);
   };
 
   const loadTouristData = async () => {
-    let user = await axios.get("http://localhost:8080/getData");
+    let user = await axios.get("https://yadgarsafar-backend.netlify.app/getData");
     setTourist(user.data);
   };
 
@@ -67,7 +67,7 @@ export default function PaymentForm() {
         const { id } = paymentMethod;
         console.log("paymentMethod: ", paymentMethod);
         setIsLoading(true);
-        const response = await axios.post("http://localhost:8080/payment", {
+        const response = await axios.post("https://yadgarsafar-backend.netlify.app/payment", {
           amount: 999,
           id,
         });
@@ -97,7 +97,7 @@ export default function PaymentForm() {
 
                   };
 
-                  await axios.post(`http://localhost:8080/addpackage`, formdata)
+                  await axios.post(`https://yadgarsafar-backend.netlify.app/addpackage`, formdata)
                     .then(
                       (res) =>
                         res && setIsLoading(false)
@@ -159,12 +159,11 @@ export default function PaymentForm() {
           <button
                           type="button"
                           className="btn btn-primary float-right"
-                          onClick={ e =>{navigate(`/Profile`)}}
+                          onClick={ e =>{navigate(`/profile`)}}
           >
                           Go to Profile
           </button>
-          {/* <a href="#" className="btn btn-primary">Go to Homepage</a>
-          <a href="#" className="btn btn-primary float-right" >Go to Profile</a> */}
+          
         </div>
       </div>
       )}

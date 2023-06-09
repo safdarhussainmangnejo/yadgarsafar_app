@@ -12,14 +12,14 @@ const SignUp = () => {
     
 const insertData = () => { 
   
-  let result = axios.post(`http://localhost:8080/InsertData`, { firstname:firstname, lastname:lastname, email: email, password: password });
+  let result = axios.post(`https://yadgarsafar-backend.netlify.app/InsertData`, { firstname:firstname, lastname:lastname, email: email, password: password });
   
   if(result) {
       alert("Welcome to Yadgar Safar")
-      navigate('/SignIn');
+      navigate('/signin');
     } else {
       alert("User already registered");
-      navigate('/SignUp');
+      navigate('/signup');
     }
     
     }
@@ -59,7 +59,7 @@ const insertData = () => {
             </div>
             <button type="submit" name="signup" className="btn btn-primary btn-block mb-4">Sign up</button>
             <div className="text-center">
-              <p>Have an account? <a href="SignIn">Sign In</a></p>
+              <p>Have an account? <a href="signin">Sign In</a></p>
             </div>
         </form>
         </>

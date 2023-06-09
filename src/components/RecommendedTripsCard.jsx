@@ -34,7 +34,7 @@ function RecommendedTripsCard(props) {
 
                     </div>
 
-                    <a href={`/Pack_Detail/${props.id}`} >
+                    <a href={`/pack_detail/${props.id}`} >
                       <Button variant="outline-primary form-control" onClick={<Details/>}>Book Now</Button>
                     </a>
                   </Card.Body>

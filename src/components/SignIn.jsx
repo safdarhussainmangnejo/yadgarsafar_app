@@ -11,7 +11,7 @@ function SignIn() {
     useEffect(() => {
         const auth = localStorage.getItem('token');
         if (auth) {
-            navigate('/Profile');
+            navigate('/profile');
         }
     }, [])
 
@@ -24,12 +24,11 @@ function SignIn() {
             setError(true);
             return false;
         }
-        // `http://localhost:27017/login`
 
-        axios.post(`http://localhost:8080/login`, { email: email, password: password }).then(res => {
+        axios.post(`https://yadgarsafar-backend.netlify.app/login`, { email: email, password: password }).then(res => {
             
             localStorage.setItem("token", res.data.token);
-            navigate('/Profile')
+            navigate('/profile')
 
     
         })
@@ -75,7 +74,7 @@ function SignIn() {
             </div>
             <button type="submit" className="btn btn-primary btn-block mb-4">Sign in</button>
             <div className="text-center">
-                <p>Don't have an account? <a href="SignUp">Sign Up</a></p>
+                <p>Don't have an account? <a href="signup">Sign Up</a></p>
             </div>
         </form>
     </>

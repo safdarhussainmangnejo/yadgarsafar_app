@@ -19,14 +19,6 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-// import {makeStyles} from '@material-ui/core';
-
-// const useStyle = makeStyles ({
-//   textF : {
-//     color: 'red',
-//     backgrondColor : "red"
-//   }
-// })
 
 const Slider = () => {
 

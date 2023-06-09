@@ -1,8 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
-import StarIcon from '@mui/icons-material/Star';
-import Details from './Details';
 import '../index.css';
 
 function ExploreProvinces(props) {

@@ -10,7 +10,7 @@ const EditProfile = () => {
 
 
     const fetchData = async () => {
-        fetch("http://localhost:8080/getData")
+        fetch("https://yadgarsafar-backend.netlify.app/getData")
             .then(response => response.json()).then(data => {
                 setProf(data)
             })
@@ -81,9 +81,9 @@ const EditProfile = () => {
             }
 
 
-            await axios.post(`http://localhost:8080/update/${prof._id}`, obj).then(res => {
+            await axios.post(`https://yadgarsafar-backend.netlify.app/update/${prof._id}`, obj).then(res => {
 
-                navigate('/Profile');
+                navigate('/profile');
             }
 
             )

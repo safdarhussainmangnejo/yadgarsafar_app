@@ -24,7 +24,7 @@ export default function Footer(){
                     <div className='row g-0'>
                         <div className='spacing pl-50 col-xl-4 col-lg-4 col-md-6 col-sm-12'>
                         
-                            <a  href="#/" id="logoImg">
+                            <a  href="#" id="logoImg">
                                 <img src={logo} alt="footer logo" className={classes.image} />
 
                             </a>

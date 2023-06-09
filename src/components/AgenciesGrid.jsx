@@ -1,6 +1,5 @@
 import React from 'react';
 import AgenciesCard from './AgenciesCard';
-import adventureTour from '../images/Agencies/adventureTour.png';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import {useState, useEffect} from 'react';
@@ -14,7 +13,7 @@ export default function AgenciesGrid() {
 
     const fetchData = async () => {
 
-        let data = await axios.get('http://localhost:8080/getUsers')
+        let data = await axios.get('https://yadgarsafar-backend.netlify.app/getUsers')
 
         setAgency(data.data)
     }

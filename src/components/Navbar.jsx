@@ -26,13 +26,13 @@ const Navbar = () => {
   const [avatarName, setAvatarName] = React.useState("");
   const [URL, setURL] = React.useState("");
 
-  axios.get(`http://localhost:8080/getData`, (req, res) => {
+  axios.get(`https://yadgarsafar-backend.netlify.app/getData`, (req, res) => {
       res.json()
   }).then(data => {
     localStorage.getItem("token") ? 
-    setURL(data.data.image)
+    setURL(data.data?.image)
     :
-    setAvatarName(data.data.firstname)
+    setAvatarName(data.data?.firstname)
   })
 
 
@@ -56,7 +56,7 @@ const Navbar = () => {
   let settings;
   
     const auth = localStorage.getItem("token");
-    auth ? settings = ['Profile','Logout'] : settings = ['SignIn', 'SignUp', 'agencydashboard'];
+    auth ? settings = ['profile','logout'] : settings = ['signin', 'signup', 'agencydashboard'];
 
   return (
     <AppBar position="fixed">
